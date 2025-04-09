@@ -17,12 +17,12 @@
         </li>
         <li>
             <a href="">
-                <img src="{{ asset('/assets/icons/home.svg') }}" alt="" class="w-6">
+                <img src="{{ asset('/assets/icons/report.svg') }}" alt="" class="w-6">
             </a>
         </li>
         <li>
             <a href="">
-                <img src="{{ asset('/assets/icons/home.svg') }}" alt="" class="w-6">
+                <img src="{{ asset('/assets/icons/profile.svg') }}" alt="" class="w-6">
             </a>
         </li>
     </ul>
