@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Card;
+use App\Models\Transaksi;
 use Illuminate\Http\Request;
 
 class CardController extends Controller
@@ -36,9 +37,14 @@ class CardController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $nama)
     {
-        //
+        $card = Card::where('nama', strtoupper($nama))->first();
+        $transaksi = Transaksi::where('card_id', $card->id)->get();
+        return view('card', [
+            'card' => $card,
+            'transaksi' => $transaksi,
+        ]);
     }
 
     /**
