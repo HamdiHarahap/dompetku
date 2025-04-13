@@ -22,7 +22,7 @@
     </section>
     <section class="px-5 py-5 mt-7">
         <div class="bg-white rounded-md py-5 px-4 shadow-md">
-            <h1 class="text-black font-semibold mb-2 text-lg">Kartu Saya</h1>
+            <h1 class="text-black font-semibold mb-2 text-lg">Kartu Sering Digunakan</h1>
 
             @foreach ($cards as $item)     
             <div class="flex items-center gap-4 text-black border-t-2 border-gray-200 rounded-md p-2">
