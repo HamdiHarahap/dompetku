@@ -25,5 +25,6 @@ Route::get('/', function () {
 Route::get('/transaksi', [TransaksiController::class, 'index']);
 Route::get('/tambah-transaksi', [TransaksiController::class, 'create']);
 Route::get('/kartu', [CardController::class, 'index']);
+Route::get('/kartu/{nama}', [CardController::class, 'show']);
 
 Route::post('/tambah-transaksi', [TransaksiController::class, 'store'])->name('tambah-transaksi');
