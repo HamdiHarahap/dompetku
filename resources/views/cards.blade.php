@@ -16,7 +16,7 @@
                     
                     <p class="font-semibold">IDR {{ number_format($item->saldo, 0, ',', '.') }}</p>
                 </div>
-                <a href="" class="ml-auto">
+                <a href="/kartu/{{ strtolower($item->nama) }}" class="ml-auto">
                     <img src="{{ asset('assets/icons/rarrow.svg') }}" alt="" class="w-6">
                 </a>
             </div>
